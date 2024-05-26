@@ -68,8 +68,8 @@ in about me into two parts: The left part is the text content and the right part
 (5) Contact section : Has a video loop as its background. Also uses the tag <form> to create a form. 
 
 #### CSS 
-CSS  (styles.css) has styling for each section. The code is organized and commented , clearly showing the stylings applied to each section. Linear gradients are used 
-as a background frequently to create the effect of a changing sky. CSS is also used for styling elements that are created by Javascript.
+CSS  (styles.css) has styling for each section. The code is organized and commented , clearly showing the stylings applied to each section. Linear gradients are used  as a background frequently to create the effect of a changing sky. CSS is also used for styling elements that are created by Javascript.
+
 The bootstrap classes _bootstrap.min.css_ and _bootstram.min.css.map_ are also used as stylesheets to include the bootstrap 5 library. 
 
 The CSS has frequent use of :
@@ -92,7 +92,17 @@ script.js has the following functions :
 - Code for shooting stars in the film section.
 - Code for sending email from form using EmailJS.
 
+### Challenges 
+Some challenges I faced were :
 
+- Getting the video backgrounds right and positioning them corrrectly. Hod to tweak the transform values and the position styling a lot to get it right.
+- Scripting for shooting stars, This took way more time than i anticipated, There was an issue with the way I was using keyframes. I also had to experiment a little to find the right values for animation Interval, number of stars, and interval of star generation.
+- Getting the form to send the email using email.min.js library. It had some complications but I was finally able to do it after some time
+
+## Reflections
+Overall, I am really proud of how the project turned out. This was my first time building a website from scratch without using any template and directly writing HTML, CSS and JavaScript code without any starter template. I am proud of the way the animations turned out and the design of the  final layout of the page. I had thought that it would be very difficult to build a website centred around the theme of my film as the theme did not have a definite object but rather a collection of them - however, I was able to incorporate it by using the sky as inspiration for the background of my webpage. 
+
+I wanted to include a section with dynamic trees in the beginning -  which would have trees that would grow as you scroll down, however doing this proved to be tricky and caused a lot of complications so I decided to scrap it. Although I decided not to implement it here, this is something that I would love to implement in one of my future projects as a challenge.
 
 
 
