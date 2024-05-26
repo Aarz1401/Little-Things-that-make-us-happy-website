@@ -86,11 +86,13 @@ JavaScript is used to control animations, create elements, delete elements, and 
 
 script.js has the following functions :
 
-- Code to change Carousel captions whenever the image changes (this was needed because my carousel labels are outside the carousel)
+- Code to change Carousel captions whenever the image changes (this was needed because my carousel labels are outside the carousel).
 - Code to create stars and make them twinkle.
-- Code to create and move clouds
-- Code for shooting stars in the film section
+- Code to create and move clouds.
+- Code for shooting stars in the film section.
 - Code for sending email from form using EmailJS.
+
+
 
 
 
