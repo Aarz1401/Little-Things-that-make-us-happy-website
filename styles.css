@@ -1,0 +1,487 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100%;
+    overflow-x:hidden;
+    background-color: #444;
+    z-index:-99;
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure there is no space between sections */
+.section {
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin:0;
+}
+
+.custom_nav-container {
+    padding: 0;
+    position:-webkit-sticky;
+    position:sticky;
+  }
+  
+.custom_nav-container .navbar-nav {
+    margin: 0;
+}
+  
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 25px;
+    color: #fffdfd;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: #0b0a0a;
+    background-color: #ff8ba7;
+  }
+  
+
+  
+.custom_nav-container:hover{
+    opacity:1;
+    background-color:#000;
+}
+
+.film{
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.gallery{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.content{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.home{
+    position:relative;
+    width:100% ;
+    /*height: 100vh;*/
+    overflow:hidden;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); /* Optional: for better visibility */
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.navbar-brand{
+    color:white;
+}
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+    color: white;
+    text-decoration: underline; 
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+#mainTitle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color:#f1f1f1;
+}
+.mainContent {
+    background-color: antiquewhite; /* Light background for content */
+    position:relative;
+}
+.button_container{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-style: double;
+    align-items: center;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.button_container .watchFilm{
+    color:#080808;
+    background:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1em;
+    border-radius: 10px;
+    padding:15px 30px;
+}
+
+
+.container{
+    position:relative;
+}
+
+
+
+/* About Section CSS Properties */
+.aboutp1{
+    
+    border:#000000;
+    border-width:20px;
+    
+}
+.aboutp1 li{
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.aboutImage {
+    flex-basis: 40%;
+    border-radius: 20px;
+    max-width: 40%;
+    overflow-wrap: normal;
+}
+.aboutSection {
+    position: relative;
+    display: flex;
+    width:100%;
+    align-items: center;
+    flex-direction:column;
+    min-height: 100%; /* Full viewport height */
+    background: linear-gradient(to bottom, #000, #444);
+    color:white;
+    border: none;
+    padding: 100px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    overflow:hidden;
+    /*border-radius:250px 250px 250px 250px;*/
+}
+.aboutSection .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite;
+}
+
+/* Keyframes for the twinkling effect */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.aboutHeader{
+    padding:5%;
+}
+.torch1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px; /* Base width of the cone */
+    height: 1000px; /* Height of the cone */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none; /* Allow mouse events to pass through the torch */
+    opacity: 0.5; /* Adjust the opacity of the light */
+    transform: translate(0%, -50%) rotate(90deg) ; /* Rotate the torch to point upwards */
+    z-index: 9999; /* Ensure the torch is above other elements */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Create a conical shape */
+}
+.torch2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px; /* Base width of the cone */
+    height: 1000px; /* Height of the cone */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none; /* Allow mouse events to pass through the torch */
+    opacity: 0.5; /* Adjust the opacity of the light */
+    transform: translate(-100%, -50%) rotate(-90deg); /* Rotate the torch to point upwards */
+    z-index: 9999; /* Ensure the torch is above other elements */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Create a conical shape */
+}
+/*.torch3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px; 
+    height: 800px; 
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none; 
+    opacity: 0.5; 
+    transform: translate(-100%, -50%) rotate(180deg); 
+    z-index: 9999; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}*/
+
+/* Film  Section CSS Properties */
+.filmSection{
+    display: flex;
+    width:100%;
+    align-items: center;
+    min-height: 100%; /* Full viewport height */
+    /*background: url(images/little_things.png);
+    background-size: contain;*/
+    background: linear-gradient(to bottom, #444, #87ceeb); /* Light sky blue gradient */
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:relative;
+}
+.filmSection .container{
+    padding : 180px 180px;
+}
+.mainVideo{
+    padding:0px;
+    overflow-wrap: normal;
+}
+.shooting-stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: 0; /* Ensure stars are behind content */
+}
+
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    opacity: 0.8;
+    animation: shoot linear infinite;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translate(0, 0) rotate(-45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100vw, 100vh) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+.crescent-moon-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    border-radius: 50%;
+    z-index: 1; /* Ensure moon is in front of stars but behind content */
+}
+
+
+/* Gallery Section CSS Properties */
+.gallerySection{
+    display: flex;
+    width:100%;
+    align-items: center;
+    min-height: 100%; /* Full viewport height */
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff); /* Light sky blue gradient */
+    border: none;
+    padding: 15% 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:relative;
+}
+
+#gallery{
+    top:-80px;
+    position:relative;
+}
+.carousel-item img {
+    width: 40vh; /* Ensure the image width matches the carousel width */
+    height: 70vh; /* Fixed height for all images */
+    object-fit:cover; /* Maintain aspect ratio while covering the area */
+}
+.carousel-caption-outside {
+    position: relative;
+    text-align: center;
+}
+.carousel-caption-outside h5, .carousel-caption-outside p {
+    margin: 0;
+    padding: 5px;
+}
+.moving-clouds-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: 0; /*Makes sure clouds are behind content*/
+}
+
+.cloud {
+    position: absolute;
+    bottom: 0;
+    background:white;
+    border-radius: 50%;
+    opacity: 0.8;
+    background:cover;
+    animation: moveClouds linear infinite;
+}
+
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.iframe{
+    z-index: 90;
+}
+
+/* Contact Section CSS Properties */
+.contactSection {
+    position:relative;
+    display: flex;
+    width:100%;
+    align-items: center;
+    min-height: 100%; /* Full viewport height */
+    /*background:url("images/little_things.png");
+    background-size:contain;*/
+    background:none;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+
+#contactTitle {
+    font-size: 2.5em;
+    color: #efecec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.formGroup {
+
+    width: 100%;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: bold;
+}
+
+.formGroup input, .formGroup textarea {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+#sendButton {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#sendButton:hover {
+    background-color: #ff1a8c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact{
+    padding:200px;
+    z-index:1;
+    position:relative;
+    overflow:hidden;
+    width:100%;
+}
+.contact .text{
+    color:white;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+.treeContainer{
+    width:100%;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+.treeContainer .img{
+    width:auto;
+    height:auto;
+}
+.videoContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+#leavesVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
