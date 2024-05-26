@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//the code below was used to change torch position with a mouse but I removed it later
 //torch controls
 /*document.addEventListener('DOMContentLoaded', function () {
     const torch = document.querySelector('.torch');
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     requestAnimationFrame(updateTreeHeight);
 });*/
 
-//create stars
+//Code to create stars and make them twinkle
 document.addEventListener('DOMContentLoaded', function() {
     const section = document.querySelector('.aboutSection');
     
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(createStar, 100); // Frequency of new stars
 });
 
-//move clouds
+//Code to create and move clouds
 document.addEventListener('DOMContentLoaded', function() {
     const cloudsContainer = document.querySelector('.moving-clouds-container');
     const numberOfClouds = 10;
@@ -121,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//shooting stars 
+//code for shooting stars in film section 
 document.addEventListener('DOMContentLoaded', function() {
     const starsContainer = document.querySelector('.shooting-stars-container');
     const numberOfStars = 10;
@@ -148,26 +149,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Continuously create new stars
     setInterval(createShootingStar, 200);
-});
-//flying birds
-
-document.addEventListener('DOMContentLoaded', () => {
-    const birds = document.querySelectorAll('.bird');
-    birds.forEach((bird, index) => {
-        bird.style.animationDelay = `${index * 2}s`;
-    });
-});
-
-//for navbar 
-window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) { // Adjust this value based on when you want the color to change
-        navbar.classList.add('navbar-dark-custom');
-        navbar.classList.remove('navbar-light', 'bg-light');
-    } else {
-        navbar.classList.remove('navbar-dark-custom');
-        navbar.classList.add('navbar-light', 'bg-light');
-    }
 });
 
 //Code for sending email from form

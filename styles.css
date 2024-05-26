@@ -1,3 +1,7 @@
+
+/* ------------------------------
+Code for general properties
+--------------------------------- */
 html,body{
     margin: 0;
     padding: 0;
@@ -23,6 +27,10 @@ div{
     margin:0;
 }
 
+
+/* ------------------------------
+Properties for navbar at top 
+--------------------------------- */
 .custom_nav-container {
     padding: 0;
     position:-webkit-sticky;
@@ -54,43 +62,6 @@ div{
     opacity:1;
     background-color:#000;
 }
-
-.film{
-    background-color: #f44336;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-.gallery{
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-.content{
-    display: none;
-    width: 100%;
-    height: 100%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-.home{
-    position:relative;
-    width:100% ;
-    /*height: 100vh;*/
-    overflow:hidden;
-}
 .navbar {
     position: fixed;
     top: 0;
@@ -114,6 +85,17 @@ div{
 .navbar-nav .nav-link.active {
     font-weight: bold;
 }
+
+/* ------------------------------
+Properties for home section
+--------------------------------- */
+.home{
+    position:relative;
+    width:100% ;
+    /*height: 100vh;*/
+    overflow:hidden;
+}
+
 #mainTitle {
     position: absolute;
     top: 40%;
@@ -154,7 +136,9 @@ div{
 
 
 
-/* About Section CSS Properties */
+/* ------------------------------
+Properties for about section
+--------------------------------- */
 .aboutp1{
     
     border:#000000;
@@ -235,21 +219,11 @@ div{
     z-index: 9999; /* Ensure the torch is above other elements */
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Create a conical shape */
 }
-/*.torch3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 800px; 
-    height: 800px; 
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
-    pointer-events: none; 
-    opacity: 0.5; 
-    transform: translate(-100%, -50%) rotate(180deg); 
-    z-index: 9999; 
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
-}*/
 
-/* Film  Section CSS Properties */
+
+/* ------------------------------
+Properties for Film section
+--------------------------------- */
 .filmSection{
     display: flex;
     width:100%;
@@ -316,7 +290,9 @@ div{
 }
 
 
-/* Gallery Section CSS Properties */
+/* ------------------------------
+Properties for Gallery section
+--------------------------------- */
 .gallerySection{
     display: flex;
     width:100%;
@@ -384,7 +360,9 @@ div{
     z-index: 90;
 }
 
-/* Contact Section CSS Properties */
+/* ------------------------------
+Properties for Contact section
+--------------------------------- */
 .contactSection {
     position:relative;
     display: flex;
