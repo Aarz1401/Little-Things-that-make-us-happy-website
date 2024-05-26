@@ -124,14 +124,14 @@ document.addEventListener('DOMContentLoaded', function() {
 //shooting stars 
 document.addEventListener('DOMContentLoaded', function() {
     const starsContainer = document.querySelector('.shooting-stars-container');
-    const numberOfStars = 30;
+    const numberOfStars = 10;
 
     function createShootingStar() {
         const star = document.createElement('div');
         star.classList.add('shooting-star');
-        star.style.top = `${Math.random() * 100}%`; // Random position near the top
-        star.style.left = `${Math.random() * 100}%`; // Random position near the left
-        star.style.animationDuration = `${Math.random() * 1 + 5}s`; // Random duration between 0.5s and 1.5s
+        star.style.top = `${Math.random() * 70}%`; // Random position near the top
+        star.style.left = `${Math.random() * 50}%`; // Random position near the left
+        star.style.animationDuration = `${7}s`; // Random duration between 0.5s and 1.5s
 
         starsContainer.appendChild(star);
 
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Continuously create new stars
-    setInterval(createShootingStar, 500);
+    setInterval(createShootingStar, 200);
 });
 //flying birds
 
