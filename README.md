@@ -1,4 +1,4 @@
-# Website - [Little things that make us happy]([https://aarz1401.github.io/Little-Things-that-make-us-happy-website/])
+# Website - [Little things that make us happy]((https://aarz1401.github.io/Little-Things-that-make-us-happy-website/))
 ## Project Description
 This website is designed to host my short film - _Little Things that make us happy_ . This film is inspired by little things all around us that 
 have the potential to bring happiness in our lives when we pay attention to them. All too often, such things get ignored, but if we would be 
